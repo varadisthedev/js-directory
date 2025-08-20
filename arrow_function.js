@@ -13,4 +13,7 @@ const user_profile={
     address:"nagpur, india "
 };
 
-console.log(user_profile.age)
+console.log(user_profile.age);
+async const fucntion = () => {
+    return
+}
