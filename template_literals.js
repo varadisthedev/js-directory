@@ -17,3 +17,4 @@ const num1=12;const num2=12;
 console.log(`is num1 greater than num2? ${num1>num2}`);
 
 //tagged templates
+i

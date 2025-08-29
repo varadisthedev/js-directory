@@ -17,7 +17,15 @@ const userdata={
     batch:"B1",
     phone:999999999
 };
-const copyobj1=[...userdata];
+const copyobj1={...userdata}; // here we used {} instead of [] becz userdata is not a iterable like arrays
 console.log(copyobj1)
+
+const userdata_public={
+    hobby:"chess",
+    planet:"earth"
+};
+
+const complete_profile={...userdata,...userdata_public}
+
 // rest operator 
 
