@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background-color: beige;
+    }
+
+    #name-core{
+        background-color: beige;
+    }
+
+    #list{
+        font-size: 16px;
+        color:black;
+    }
+    .todo{
+        background-color: rgb(151, 175, 234);
+        box-shadow: 5px;
+        
+    }
+</style>
+<body>
+    <!-- creating a static paragaph and a button  -->
+     <p id="para-core">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, eligendi! Pariatur id minus magnam perferendis ipsa numquam totam, ullam vel eaque temporibus nulla cupiditate nobis exercitationem tempora aperiam officia ducimus!
+     </p>
+     <button id="button-core">
+        change text
+     </button>
+    
+
+    <!-- to change the css of a div using js -->
+     <div id="container" class="container">
+        <h1>this div initially had a beige color </h1>
+        <p>JS can be combined with css usign the var.style to change the color of the div dynamically. on a tap of a button</p>
+        <button id="container-button">
+            change color
+        </button>
+
+     </div>
+
+     <!-- makign so that user can see what he input, use case: login forms -->
+     <div id="name-core">
+        <h1>please enter your credentials below</h1>
+        <input id="nameinput" placeholder="enter your name">
+        <p id="namedisplay">sample text</p>
+     </div>
+
+     <!-- adding new items to a list on a click of a button -->
+     <div class="todo">
+        <h1> hello there!, this is a todo list!</h1>
+        <input id="taskInput" placeholder="enter your task here">
+        <button id="taskbutton">add</button>
+
+        <ul id="list"></ul>
+
+        
+    </div> 
+     
+    <!-- attaching our js to the html -->
+    <script src="script.js"></script>
+</body>
+</html>
