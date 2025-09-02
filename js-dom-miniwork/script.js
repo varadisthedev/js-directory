@@ -29,15 +29,14 @@ input.addEventListener("input",changeinput)
 const list=document.getElementById("list")
 const taskInput=document.getElementById("taskInput")
 const button=document.getElementById("taskbutton")
-const item=document.createElement("li")
 
 const adder=()=>{
     const item=document.createElement("li")
     item.textContent = taskInput.value;
     list.appendChild(item)
     //making it so that list item deletes when tapped on them 
-    li.addEventListener("click",function(){
-        li.remove();
+    item.addEventListener("click",function(){
+        item.remove();
     })
     
     taskInput.value=""
