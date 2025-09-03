@@ -41,6 +41,13 @@ const adder=()=>{
     
     taskInput.value=""
 }
+//event delegation to check the list items
+list.addEventListener("click",(e) => {
+  if (e.target.tagName === "LI") {
+    e.target.remove();
+  }
+});
+
 
 button.addEventListener("click",adder)
 
